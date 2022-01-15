@@ -1,0 +1,7 @@
+{
+  "name": "Hide text area buttons",
+  "description": "Remove buttons in textarea including buttons from other plugins",
+  "author": "Xinos",
+  "version": "1.0.0",
+  "license": "MIT"
+}

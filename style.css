@@ -1,0 +1,26 @@
+.hide-text-area-buttons-icon {
+    pointer-events: none;
+}
+.hide-text-area-buttons-icon button {
+    width: 32px;
+    height: 32px;
+    padding-right: 8px;
+}
+.hide-text-area-buttons-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* help discord properly render menu sizes */
+#textarea-context div[class^=submenuPaddingContainer-] div[aria-activedescendant="textarea-context-hide-text-area-buttons"] {
+    margin-bottom: 30px;
+}
+
+
+.hide-text-area-buttons-icon.send {
+    margin-left: -10px;
+}
+.hide-text-area-buttons-icon.channel-emoji-picker {
+    margin-left: -5px;
+}
