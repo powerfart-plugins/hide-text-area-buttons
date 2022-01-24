@@ -89,8 +89,8 @@ module.exports = class HideTextAreaButtons extends Plugin {
 
   injectToTextAreaCM () {
     const SlateTextAreaContextMenu = getModule((m) => m?.default?.displayName === 'SlateTextAreaContextMenu', false);
-    const ChannelSendMessageButton = getModule((m) => m?.type?.render?.displayName === 'ChannelSendMessageButton', false).type;
-    const submitButtonItem = this.getItemFromElem(ChannelSendMessageButton.render({ disabled: true }));
+    const ChannelSendMessageButton = getModule((m) => m?.type?.displayName === 'ChannelSendMessageButton', false);
+    const submitButtonItem = this.getItemFromElem(ChannelSendMessageButton.type({ disabled: true }));
     // const { roleRow } = getModule([ 'roleRow', 'roleDot' ], false); // is a lazy load module...
 
     inject('hide-text-area-buttons-cm', SlateTextAreaContextMenu, 'default', (args, res) => {
