@@ -1,5 +1,9 @@
 # Hide text area buttons
 
+> **Warning**
+> Powercord client is EOL and no longer works with latest versions of Discord
+
+
 <img src="preview/image0.png" width="700px" align="center" alt="Hide text area buttons Preview">
 
 Adds a menu to hide buttons from the area input. The main feature is the ability to hide buttons added by other plugins.
